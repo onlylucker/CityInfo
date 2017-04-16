@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.city_info.heartbeat.ityinfo.TitleActivity"
+    android:orientation="vertical"
+    android:id="@+id/relativeLayout">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_button_download"
+        android:id="@+id/title_button_download"
+        android:layout_marginBottom="190dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginTop="64dp"
+        android:max="240"
+        android:maxWidth="200dp"
+        android:layout_alignTop="@+id/title_button_download"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_button_continue"
+        android:id="@+id/title_button_continue"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textVProgress"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textVProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/progress_bar"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
